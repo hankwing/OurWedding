@@ -40,6 +40,25 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script >//--创建页面监听，等待微信端页面加载完毕 触发音频播放
+    document.addEventListener('DOMContentLoaded', function () {
+        function audioAutoPlay() {
+            var audio = document.getElementById('audio');
+            audio.play();
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                audio.play();
+            }, false);
+        }
+        audioAutoPlay();
+    });
+    //--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+    document.addEventListener('touchstart', function () {
+        function audioAutoPlay() {
+            var audio = document.getElementById('audio');
+            audio.play();
+        }
+        audioAutoPlay();
+    });</script>
     <![endif]-->
 
 </head>
@@ -66,15 +85,6 @@
 
             <div class="music-holder">
                 <audio controls="controls" height="100" width="100" autoplay="autoplay" loop="loop">
-                    document.addEventListener('DOMContentLoaded', function () {
-                    function audioAutoPlay() {
-                    var audio = document.getElementById('bg-music');
-                    audio.play();
-                    document.addEventListener("WeixinJSBridgeReady",
-                    function () {
-                    audio.play();
-                    }, false);    }
-                    audioAutoPlay();});
                     <source src="http://p0myo90fu.bkt.clouddn.com/Terdsak%20Janpan%20-%20Angel.mp3" type="audio/mp3" />
                     <embed height="100" width="100" src="http://p0myo90fu.bkt.clouddn.com/Terdsak%20Janpan%20-%20Angel.mp3" />
                 </audio>
