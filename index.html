@@ -66,6 +66,15 @@
 
             <div class="music-holder">
                 <audio controls="controls" height="100" width="100" autoplay="autoplay" loop="loop">
+                    document.addEventListener('DOMContentLoaded', function () {
+                    function audioAutoPlay() {
+                    var audio = document.getElementById('bg-music');
+                    audio.play();
+                    document.addEventListener("WeixinJSBridgeReady",
+                    function () {
+                    audio.play();
+                    }, false);    }
+                    audioAutoPlay();});
                     <source src="http://p0myo90fu.bkt.clouddn.com/Terdsak%20Janpan%20-%20Angel.mp3" type="audio/mp3" />
                     <embed height="100" width="100" src="http://p0myo90fu.bkt.clouddn.com/Terdsak%20Janpan%20-%20Angel.mp3" />
                 </audio>
