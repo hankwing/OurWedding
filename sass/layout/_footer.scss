@@ -2,7 +2,7 @@
 #0.5	footer
 --------------------------------------------------------------*/
 .site-footer {
-	@include background-style("../images/footer-bg.jpg", center center, cover, no-repeat, local);
+	@include background-style("http://p0myo90fu.bkt.clouddn.com/%E5%B0%BE%E9%A1%B5%E8%83%8C%E6%99%AF.jpg", center center, cover, no-repeat, local);
 	text-align: center;
 	color: $white;
 	padding: 160px 0;
