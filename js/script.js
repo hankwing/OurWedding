@@ -489,7 +489,7 @@
             items: 1,
             dots: false,
             autoplay: true,
-            autoplayTimeout: 3000,
+            autoplayTimeout: 1500,
             smartSpeed: 1000,
             loop: true,
         });
