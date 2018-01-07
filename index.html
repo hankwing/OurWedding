@@ -36,6 +36,7 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <script src="js/weixinautoplay.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -65,11 +66,17 @@
             </button>
 
             <div class="music-holder">
-                <!--<audio controls="controls" height="100" width="100" autoplay="autoplay" loop="loop">-->
-                <audio controls="controls" height="100" width="100" loop="loop">
+                <audio controls="controls" height="100" width="100" autoplay="autoplay" loop="loop" id="car_audio">
+                <!--<audio controls="controls" height="100" width="100" loop="loop" id="car_audio">-->
                     <source src="http://p0myo90fu.bkt.clouddn.com/Terdsak%20Janpan%20-%20Angel.mp3" type="audio/mp3" />
                     <embed height="100" width="100" src="http://p0myo90fu.bkt.clouddn.com/Terdsak%20Janpan%20-%20Angel.mp3" />
                 </audio>
+                <script>
+                    document.getElementById('car_audio').play();
+                    document.addEventListener("WeixinJSBridgeReady", function () {
+                        document.getElementById('car_audio').play();
+                    }, false);
+                </script>
                 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://p0myo90fu.bkt.clouddn.com/Terdsak%20Janpan%20-%20Angel.mp3"></iframe> -->
 
             </div>
@@ -199,7 +206,7 @@
                             <div class="details">
                                 <div class="details-inner">
                                     <h3>新娘</h3>
-                                    <p>我是徐梦雪，目前是中科院遗传所在读女博士一枚。高一第一次见到翁同学，大概怎么也不会想到八年以后，那个“我觉得这个同学乡土气息很浓厚”的人竟然成为我将要相伴一生的人。回想起我们一路走来的点点滴滴，感叹缘分奇妙的同时，更想感谢翁同学在我们感情里的付出。是他的悉心呵护与默默付出，才让我们共同走到这里。</p>
+                                    <p>我是徐梦雪，目前是生物在读女博士一枚。高一第一次见到翁同学，大概怎么也不会想到八年以后，那个“我觉得这个同学乡土气息很浓厚”的人竟然成为我将要相伴一生的人。回想起我们一路走来的点点滴滴，感叹缘分奇妙的同时，更想感谢翁同学在我们感情里的付出。是他的悉心呵护与默默付出，才让我们共同走到这里。</p>
                                     <span class="signature">徐梦雪</span>
                                     <!--<ul class="social-links">-->
                                         <!--<li><a href="#"><i class="fa fa-wechat"></i></a></li>-->
@@ -221,11 +228,11 @@
 
 
         <!-- start count-down-section -->
-        <section class="count-down-section section-padding parallax" data-bg-image="http://p0myo90fu.bkt.clouddn.com/bg/b%20%2852%29_1_%E5%89%AF%E6%9C%AC.jpg" data-speed="7">
+        <section class="count-down-section section-padding parallax" data-bg-image="http://p0myo90fu.bkt.clouddn.com/bg_2/b%20%2852%29_1_%E5%89%AF%E6%9C%AC.jpg" data-speed="7">
             <div class="container">
                 <div class="row">
                     <div class="col col-md-4">
-                        <h2><span>We are waiting for.....</span> The adventure</h2>
+                        <!--<h2><span>We are waiting for.....</span> The adventure</h2>-->
                     </div>
                     <div class="col col-md-7 col-md-offset-1">
                         <div class="count-down-clock">
@@ -269,8 +276,12 @@
                                     </div>
                                 </div>
                                 <div class="col col-md-6">
-                                    <div class="img-holder">
+                                    <div class="img-holder right-align-text story-slider">
                                         <img src="http://p0myo90fu.bkt.clouddn.com/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%A7%81%E9%9D%A2_%E5%89%AF%E6%9C%AC.jpg" alt class="img img-responsive">
+                                        <img src="http://p0myo90fu.bkt.clouddn.com/gaoyi/%E9%AB%98%E4%B8%AD2.jpg" alt class="img img-responsive">
+                                        <img src="http://p0myo90fu.bkt.clouddn.com/gaoyi/%E9%AB%98%E4%B8%804.jpg" alt class="img img-responsive">
+                                        <img src="http://p0myo90fu.bkt.clouddn.com/gaoyi/%E9%AB%98%E4%B8%AD.jpg" alt class="img img-responsive">
+                                        <img src="http://p0myo90fu.bkt.clouddn.com/gaoyi/%E9%AB%98%E4%B8%803.jpg" alt class="img img-responsive">
                                     </div>
                                 </div>
                             </div>
@@ -785,8 +796,8 @@
                                 </a>
                             </div>
                             <div class="grid ceremony">
-                                <a href="http://p0myo90fu.bkt.clouddn.com/gallery/1000x866.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="http://p0myo90fu.bkt.clouddn.com/gallery/1000x866.jpg" alt class="img img-responsive">
+                                <a href="http://p0myo90fu.bkt.clouddn.com/gallery_2/1000x866.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                    <img src="http://p0myo90fu.bkt.clouddn.com/gallery_2/1000x866.jpg" alt class="img img-responsive">
                                 </a>
                             </div>
                             <div class="grid party">
@@ -795,8 +806,8 @@
                                 </a>
                             </div>
                             <div class="grid wedding">
-                                <a href="http://p0myo90fu.bkt.clouddn.com/gallery/1000x1086.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="http://p0myo90fu.bkt.clouddn.com/gallery/1000x1086.jpg" alt class="img img-responsive">
+                                <a href="http://p0myo90fu.bkt.clouddn.com/gallery_2/772x667.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                    <img src="http://p0myo90fu.bkt.clouddn.com/gallery_2/772x667.jpg" alt class="img img-responsive">
                                 </a>
                             </div>
                             <div class="grid ceremony">
@@ -804,15 +815,15 @@
                                     <img src="images/gallery/img-8.jpg" alt class="img img-responsive">
                                 </a> -->
                                 <!--<a href="https://www.youtube.com/embed/XSGBVzeBUbk?autoplay=1" data-type="iframe" class="video-play-btn">-->
-                                <a href="http://p0myo90fu.bkt.clouddn.com/gallery/897x962.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="http://p0myo90fu.bkt.clouddn.com/gallery/897x962.jpg" alt class="img img-responsive">
-                                    <i class="fa fa-play"></i>
+                                <a href="http://p0myo90fu.bkt.clouddn.com/gallery_2/897x962.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                    <img src="http://p0myo90fu.bkt.clouddn.com/gallery_2/897x962.jpg" alt class="img img-responsive">
+                                    <!--<i class="fa fa-play"></i>-->
                                 </a>
 
                             </div>
                             <div class="grid ceremony">
-                                <a href="http://p0myo90fu.bkt.clouddn.com/gallery/772x667.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="http://p0myo90fu.bkt.clouddn.com/gallery/772x667.jpg" alt class="img img-responsive">
+                                <a href="http://p0myo90fu.bkt.clouddn.com/gallery_3/1000x1086.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                    <img src="http://p0myo90fu.bkt.clouddn.com/gallery_3/1000x1086.jpg" alt class="img img-responsive">
                                 </a>
                             </div>
                         </div>
@@ -843,7 +854,7 @@
                                 <input type="text" name="name" class="form-control" placeholder="您的姓名*">
                             </div>
                             <div class="col col-sm-6">
-                                <input type="email" name="email" class="form-control" placeholder="联系方式*">
+                                <input type="text" name="email" class="form-control" placeholder="联系方式*">
                             </div>
                             <div class="col col-sm-6">
                                 <select class="form-control" name="guest" >
